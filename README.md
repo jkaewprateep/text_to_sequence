@@ -4,7 +4,7 @@ Data input from text and public sources for AI and sequence working process.
 
 ## Text reading ##
 
-Text reading or phases from public sources the important is the process of the meaning of text as sequences there are many examples on the Internet they are misused of input including use of commercial public models without transform the input into sequence format which is error NumPy or type or dataset is null
+Text reading or phases from public sources the important in the process of the meaning of the text as sequences there are many examples on the Internet of they are misused of input including the use of commercial public models without transforming the input into sequence format which is an error NumPy or type or dataset is null
 
 ```
 input_word = tf.constant(' \'Cause it\'s easy as an ice cream sundae Slipping outta your hand into the dirt Easy as an 
