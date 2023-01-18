@@ -32,6 +32,10 @@ print( tf.strings.bytes_split(input_word) )
 print( sequences_mapping_string )
 ```
 
+## Tokennizer ##
+
+This method is easy as long as you converted input from string to sequence as the model specifications or some model they had internal mapping as BERT.
+
 ```
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 : Method 2 create label from it tokenizer
