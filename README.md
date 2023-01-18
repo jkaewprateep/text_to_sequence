@@ -46,6 +46,10 @@ tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=10000, oov_token='oo
 tokenizer.fit_on_texts([text])
 ```
 
+## Padding ##
+
+This method is easy but found many of questtions about not matching dataset input, not grows of the training data to target accuracy or implement Internet codes they using transfromed dataset.
+
 ```
 i_count = tf.strings.split([text])[0].shape[0] + 1
 aDict = json.loads(tokenizer.to_json())
@@ -79,6 +83,7 @@ for i in range(i_count):
 
 dataset = tf.data.Dataset.from_tensors(( input_word, input_label ))
 ```
+### Kids eatting ice-creams ###
 
 ![ice-cream](https://github.com/jkaewprateep/text_to_sequence/blob/main/images.jpg "ice-cream") 
 ![ice-cream](https://github.com/jkaewprateep/text_to_sequence/blob/main/image3.jpg "ice-cream")
