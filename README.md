@@ -1,5 +1,10 @@
 # text_to_sequence
+
 Data input from text and public sources for AI and sequence working process.
+
+## Text reading ##
+
+Text reading or phases from pubublic sources the important is process of the meaning text as sequences there are many of examples on Internet they are misused of the input including use commercial public models without transfrom the input into sequence format that is error numpy or dtype or dataset is null
 
 ```
 input_word = tf.constant(' \'Cause it\'s easy as an ice cream sundae Slipping outta your hand into the dirt Easy as an 
