@@ -18,6 +18,10 @@ layer = tf.keras.layers.StringLookup(vocabulary=vocab)
 sequences_mapping_string = layer(tf.strings.bytes_split(input_word))
 ```
 
+## Simply chobbing by it nature devider ##
+
+It is working well in English languange but not alway, in Thai or Asian language we need to create laguage model or sentence patterns for this task.
+
 ```
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 : Method 1 create label from map it with vocaburary
