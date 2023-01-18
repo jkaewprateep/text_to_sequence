@@ -2,9 +2,13 @@
 Data input from text and public sources for AI and sequence working process.
 
 ```
-input_word = tf.constant(' \'Cause it\'s easy as an ice cream sundae Slipping outta your hand into the dirt Easy as an ice cream sundae Every dancer gets a little hurt Easy as an ice cream sundae Slipping outta your hand into the dirt Easy as an ice cream sundae Every dancer gets a little hurt Easy as an ice cream sundae Oh, easy as an ice cream sundae ')
-vocab = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "_", 
-"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+input_word = tf.constant(' \'Cause it\'s easy as an ice cream sundae Slipping outta your hand into the dirt Easy as an 
+		ice cream sundae Every dancer gets a little hurt Easy as an ice cream sundae Slipping outta your hand 
+		into the dirt Easy as an ice cream sundae Every dancer gets a little hurt Easy as an ice cream sundae 
+		Oh, easy as an ice cream sundae ')
+vocab = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", 
+		"w", "x", "y", "z", "_", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", 
+		"Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 layer = tf.keras.layers.StringLookup(vocabulary=vocab)
 sequences_mapping_string = layer(tf.strings.bytes_split(input_word))
 ```
@@ -24,7 +28,8 @@ print( sequences_mapping_string )
 : Method 2 create label from it tokenizer
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 text = "Cause its easy as an ice cream sundae Slipping outta your hand"
-tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=10000, oov_token='oov', filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower=True,)
+tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=10000, oov_token='oov', 
+	filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', lower=True,)
 tokenizer.fit_on_texts([text])
 ```
 
