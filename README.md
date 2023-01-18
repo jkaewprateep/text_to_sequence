@@ -63,4 +63,4 @@ dataset = tf.data.Dataset.from_tensors(( input_word, input_label ))
 ```
 
 ![ice-cream](https://github.com/jkaewprateep/text_to_sequence/blob/main/images.jpg "ice-cream") 
-![ice-cream](https://github.com/jkaewprateep/text_to_sequence/blob/main/image2.jpg "ice-cream")
+![ice-cream](https://github.com/jkaewprateep/text_to_sequence/blob/main/image3.jpg "ice-cream")
